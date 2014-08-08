@@ -110,14 +110,14 @@ function adapter(uri, opts){
    */
 
   Redis.prototype.broadcast = function(packet, opts, remote){
-    if(packet.custom_socket_id){
+    if(packet.custom_socket_id && packet.custom_room){
       Adapter.prototype.broadcastId.call(this, packet, opts);
     }
     else{
       Adapter.prototype.broadcast.call(this, packet, opts);
     }
     if (!remote) pub.publish(key, msgpack.encode([packet, opts]));
-  }; 
+  };
 
   return Redis;
 
