@@ -14,7 +14,7 @@
     "uid2": "0.0.3",
     "redis": "0.10.1",
     "msgpack-js": "0.3.0",
-    "socket.io-adapter": "git+ssh://git@github.com:freshdesk/socket.io-adapter.git#chrome-extension"
+    "socket.io-adapter": "git+ssh://git@github.com:freshdesk/socket.io-adapter.git#autorefresh"
   },
   "devDependencies": {
     "socket.io": "1.0.2",
